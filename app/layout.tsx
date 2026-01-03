@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${schibstedGrotesk.variable} ${martianMono.variable} min-h-screen antialiased`}
       >
-        <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+        <div className='min-h-screen  absolute inset-0 top-0 z-[-1]'>
           <LightRays
             raysOrigin='top-center-offset'
             raysColor='#581b98'
@@ -38,11 +38,10 @@ export default function RootLayout({
             followMouse={true}
             mouseInfluence={0.03}
             noiseAmount={0.1}
-            distortion={0.05}
-            className='custom-rays'
+            distortion={0.01}
           />
         </div>
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
