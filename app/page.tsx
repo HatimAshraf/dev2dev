@@ -1,33 +1,8 @@
 import EventCard from '@/components/EventCard';
 import ExploreBtn from '@/components/ExploreBtn';
+import { events } from '@/lib/constants';
 
 const Home = () => {
-  const events = [
-    {
-      image: '/images/event1.png',
-      title: 'Event1',
-    },
-    {
-      image: '/images/event2.png',
-      title: 'Event2',
-    },
-    {
-      image: '/images/event3.png',
-      title: 'Event3',
-    },
-    {
-      image: '/images/event4.png',
-      title: 'Event4',
-    },
-    {
-      image: '/images/event5.png',
-      title: 'Event5',
-    },
-    {
-      image: '/images/event6.png',
-      title: 'Event6',
-    },
-  ];
   return (
     <section>
       <h1 className='text-center'>
