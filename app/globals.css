@@ -133,6 +133,9 @@
 }
 
 @layer components {
+  li {
+    @apply list-none;
+  }
   #home {
     .subheading {
       @apply text-light-100 text-lg max-sm:text-sm text-center mt-5;
@@ -149,10 +152,6 @@
 
   header {
     @apply glass sticky top-0 z-50;
-
-    nav {
-      @apply flex flex-row justify-between mx-auto container sm:px-10 px-5 py-4;
-    }
 
     .logo {
       @apply flex flex-row items-center gap-2;
@@ -215,7 +214,7 @@
 
           ul {
             li {
-              @apply text-light-100 text-lg max-sm:text-sm;
+              @apply list-none text-light-100 text-lg max-sm:text-sm;
             }
           }
         }
