@@ -1,10 +1,16 @@
 'use client';
 
 import Image from 'next/image';
+import posthog from 'posthog-js';
 
 const ExploreBtn = () => {
   const handleClick = () => {
     console.log('button clicked');
+
+    // Capture PostHog event for explore button click
+    posthog.capture('explore_events_clicked', {
+      button_location: 'homepage_hero',
+    });
   };
   return (
     <button
